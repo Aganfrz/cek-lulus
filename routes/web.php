@@ -107,5 +107,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/detail/{id}', [SettingController::class, 'detail']);
         Route::patch('/{id}', [SettingController::class, 'update']);
         Route::delete('/{id}', [SettingController::class, 'destroy']);
+        
     });
 });
